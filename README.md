@@ -21,7 +21,8 @@ Web-base project portals that allows teams to easyly commicate to eacother givin
 ### Example of Routing Structure
 
 
-![capture](https://user-images.githubusercontent.com/43967399/53666213-5c80a480-3c22-11e9-820c-db05660e0d50.PNG)
+![capture](https://user-images.githubusercontent.com/43967399/53666365-c9943a00-3c22-11e9-9a97-980f730b3300.PNG)
+
 
 
 
