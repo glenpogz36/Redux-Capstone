@@ -24,6 +24,9 @@ Web-base project portals that allows teams to easyly commicate to eacother givin
 ![capture](https://user-images.githubusercontent.com/43967399/53666365-c9943a00-3c22-11e9-9a97-980f730b3300.PNG)
 
 
+### Example Of Redux
+
+<img width="686" alt="redux" src="https://user-images.githubusercontent.com/43967399/53748512-507f2780-3e5a-11e9-9fcf-f31d2cc59882.png">
 
 
 ### Future Improvements
