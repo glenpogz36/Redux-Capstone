@@ -2,14 +2,20 @@ import React, { Component } from 'react'
 
 class SignIn extends Component {
     state = {
-
+        email: '',
+        password: ''
     }
-    handleChange = (test1) => {
-        console.log(test1)
+    handleChange = (input) => {
+        console.log(input)
+        this.setState({
+            [input.target.id]: input.target.value
+        })
     }
 
-    handleSubmit = (test2) => {
-        console.log(test2)
+    handleSubmit = (submit) => {
+        console.log(submit)
+        submit.preventDefault();
+        console.log(this.state)
     }
 
     render() {
