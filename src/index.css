@@ -6,10 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/src/component/Asset/img/) no-repeat;
+  background: url(/public/Assets/img/background.jpg) no-repeat;
   background-size: 100%;
-  background-position: bottom;
-  background-color:#b3e5fc 
+  background-position: center;
+  background-color: #95e8f3;
+  min-height: 100%;
 }
 
 code {
