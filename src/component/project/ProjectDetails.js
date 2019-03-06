@@ -7,7 +7,7 @@ import moment from 'moment'
 
 const ProjectDetails = (props) => {
   const { project, auth } = props;
-  if (!auth.uid) return <Redirect to='/signin' />
+  if (!auth.uid) return <Redirect to='/signin' /> 
   if (project) {
     return (
       <div className="container section project-details">
@@ -17,27 +17,23 @@ const ProjectDetails = (props) => {
             <p>{project.content}</p>
           </div>
           <div className="card-action grey lighten-4 grey-text">
-            <div>Posted by {project.authorFirstNAme}{project.authorLastName}</div>
-            <div>{moment(project.createdAt.toDate()).calendar}</div>
+            <div>Posted by {project.authorFirstName} {project.authorLastName}</div>
+            <div>{moment(project.createdAt.toDate()).calendar()}</div>
           </div>
         </div>
       </div>
-
     )
   } else {
     return (
-
-      <div className="content center">
-        <p>Loading ...</p>
+      <div className="container center">
+        <p>Loading project...</p>
       </div>
     )
-
   }
-
 }
 
 const mapStateToProps = (state, ownProps) => {
-  //cosnole.log(state);
+  // console.log(state);
   const id = ownProps.match.params.id;
   const projects = state.firestore.data.projects;
   const project = projects ? projects[id] : null
@@ -49,7 +45,7 @@ const mapStateToProps = (state, ownProps) => {
 
 export default compose(
   connect(mapStateToProps),
-  firestoreConnect([
-    { collection: 'projects' }
-  ])
+  firestoreConnect([{
+    collection: 'projects'
+  }])
 )(ProjectDetails)
