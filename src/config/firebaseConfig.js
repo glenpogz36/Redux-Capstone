@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import 'firebase/storage';
 
 // Initialize Firebase
 var config = {
@@ -12,6 +13,8 @@ var config = {
     messagingSenderId: "488403964252"
 };
 firebase.initializeApp(config);
+const storage = firebase.storage();
 
-
-export default firebase;
+export {
+    storage, firebase as default
+}
